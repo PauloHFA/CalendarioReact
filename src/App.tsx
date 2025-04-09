@@ -77,7 +77,7 @@ function App() {
     return days;
   };
 
-  const handleDayClick = (day: number, month: number) => {
+  const handleDayClick = (day: number | null, month: number) => {
     if (day === null) return;
     
     const clickedDate = new Date(selectedYear, month, day);
